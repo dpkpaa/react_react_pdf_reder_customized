@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Pdf viewer</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./dist/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://console.invensislearning.com/css/app.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div
+        id="pdf-viewer"
+        data-pdf="https://alpha.invensislearning.com/storage/brochures/agile-scrum-foundation-certification-training-brochure-usa.pdf"
+      ></div>
+    </div>
+    <script src="./dist/app.js"></script>
+
+    <script>
+      function onNextPageChange(previous, current, total) {
+        console.log(previous);
+        console.log(current);
+      }
+    </script>
+  </body>
+</html>
